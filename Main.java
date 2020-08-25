@@ -4,12 +4,17 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Main {
-
+    
+    //All the data of the matrix will be stared here in form of integers
     protected static int[][] array = new int[6][6];
+    //Variables for using in iterations (k is 97 because initially it stores the ASCII value of 'a')
     protected static int i, j, k = 97, d, e;
+    //BufferdReader for user input
     protected static BufferedReader bufferedReader = new BufferedReader(
             new InputStreamReader(System.in)
     );
+    //Two StringTokenizers one for breaking a complex command into indivisual commands (delim = ":") 
+    //and one for further breaking them into commands along with parameters (delim = "-")
     protected static StringTokenizer stringTokenizer;
     protected static StringTokenizer stringTokenizer2;
     protected static String str;
@@ -18,6 +23,8 @@ public class Main {
         System.out.println("Welcome to Drumme");
         print();
         System.out.println();
+        
+        //Making an array of ASCII values numbers not seperated the distinction is done while reading the matrix for avoiding confusion
         for (i = 0; i < 6; i++) {
             for (j = 0; j < 6; j++) {
                 array[i][j] = k;
@@ -32,8 +39,9 @@ public class Main {
                 if (input.equals("help")) {
                     try{
                         int ch;
+                        //Make sure to get the Path right
                             FileReader fileReader = new FileReader(
-                                "C:\\Users\\DELL\\IdeaProjects\\Drumme\\src\\help.txt");
+                                "help.txt");
                         while((ch = fileReader.read()) != -1){
                             System.out.print((char) ch);
                         }
