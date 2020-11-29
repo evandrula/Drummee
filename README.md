@@ -3,9 +3,9 @@ The multipurpose futuristic CUI rubix cube
 
 help:
 Drumme has multiple uses,
- the gist of it is that it is a 6X6 alpha-numeric matrix in which you can be altered to form unique patterns.
+ the gist of it is that it is a 6X6 alpha-numeric matrix in which you can alter to form unique patterns.
 
-This can be used to generate passwords which are insanely difficult to crack,
+This can be used to generate passwords which are hard to crack,
  one can have a printed sequence on a cardboard strip and turn it into an actual key for your digital accounts.
 
 You can use this matrix to encrypt your messages in Ceaser style ,
